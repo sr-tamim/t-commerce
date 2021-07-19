@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T - commerce</title>
 
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
     <!-- CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
 
@@ -18,7 +21,39 @@
 </head>
 
 <body>
-    <header></header>
+    <header class="container p-4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png">
+                </a>
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <div class="navbar-nav py-3 w-100">
+                        <div class="search d-flex align-items-center justify-content-between flex-grow-1 rounded-pill px-3 py-2 mb-3 mb-lg-0 mx-lg-3"
+                            style="background:#F1F1F1;">
+                            <span class="me-lg-5">Search</span>
+                            <span class="d-flex align-items-center ms-lg-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </span>
+                        </div>
+                        <a class="nav-link active text-center" aria-current="page" href="#">Home</a>
+                        <a class="nav-link text-center text-lg-start" href="#">Product</a>
+                        <a class="nav-link text-center text-lg-start" href="#">About Us</a>
+                        <a class="nav-link text-center text-lg-start" href="#">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
 
 </html>
