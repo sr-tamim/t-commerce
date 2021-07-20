@@ -18,42 +18,363 @@
 
     <!-- bootstrap JavaScript file -->
     <script src="bootstrap/bootstrap.bundle.min.js" defer></script>
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar-toggler:hover {
+            box-shadow: 0 0 20px lightgray inset !important;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="container p-4">
+    <header class="container px-4 py-3 mb-5">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container-fluid">
+            <div class="container-fluid flex-nowrap">
                 <a class="navbar-brand" href="#">
-                    <img src="img/logo.png">
+                    <img class="w-100" src="img/logo.png">
                 </a>
-                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar">
-                    <div class="navbar-nav py-3 w-100">
-                        <div class="search d-flex align-items-center justify-content-between flex-grow-1 rounded-pill px-3 py-2 mb-3 mb-lg-0 mx-lg-3"
-                            style="background:#F1F1F1;">
-                            <span class="me-lg-5">Search</span>
-                            <span class="d-flex align-items-center ms-lg-5">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-search" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                </svg>
-                            </span>
+                <div>
+                    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <div class="navbar-nav py-3 w-100 fs-5">
+                            <div class="search d-flex align-items-center justify-content-between flex-grow-1 rounded-pill px-3 py-2 mb-3 mb-lg-0 mx-lg-3"
+                                style="background:#F1F1F1;">
+                                <span class="me-lg-5">Search</span>
+                                <span class="d-flex align-items-center ms-lg-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <a class="nav-link active text-center" aria-current="page" href="#">Home</a>
+                            <a class="nav-link text-center" href="#">Product</a>
+                            <a class="nav-link text-center" href="#">About Us</a>
+                            <a class="nav-link text-center" href="#">Contact Us</a>
                         </div>
-                        <a class="nav-link active text-center" aria-current="page" href="#">Home</a>
-                        <a class="nav-link text-center text-lg-start" href="#">Product</a>
-                        <a class="nav-link text-center text-lg-start" href="#">About Us</a>
-                        <a class="nav-link text-center text-lg-start" href="#">Contact Us</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+    <main>
+        <section class="container" style="background:#FEEAE9;border-radius:20px;">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row flex-column flex-md-row px-5 py-5">
+                            <div class="col h-100 d-flex flex-column justify-content-center">
+                                <h1 class="fw-bold fs-1">Mi LED TV 4A PRO 32</h1>
+                                <p>
+                                    This is the best tv in the world for people who just want to waste time in front of
+                                    tv.
+                                </p>
+                                <h2 style="color:#FF136F">$1289</h2>
+                                <div>
+                                    <a class="btn text-white text-uppercase border-0 px-3 py-2"
+                                        style="background:linear-gradient(#FF589B,#FF136F);">Buy
+                                        Now
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col my-5 my-md-0 text-end">
+                                <img class="w-100" src="img/banner-images/tv.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row flex-column flex-md-row px-5 py-5">
+                            <div class="col h-100 d-flex flex-column justify-content-center">
+                                <h1>Cool Dude Headphone</h1>
+                                <p>
+                                    This is the best headphone in the world for people who just want to waste time in
+                                    front of funky world.
+                                </p>
+                                <h2 style="color:#FF136F">$1289</h2>
+                                <div>
+                                    <a class="btn text-white text-uppercase border-0 px-3 py-2"
+                                        style="background:linear-gradient(#FF589B,#FF136F);">Buy
+                                        Now
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col my-5 my-md-0 text-end">
+                                <img class="w-100" src="img/banner-images/headphone.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row flex-column flex-md-row px-5 py-5">
+                            <div class="col h-100 d-flex flex-column justify-content-center">
+                                <h1>X-Box for your living room</h1>
+                                <p>
+                                    This is the best x-box in the world for people who just want to waste time in front
+                                    of fake sports.
+                                </p>
+                                <h2 style="color:#FF136F">$1289</h2>
+                                <div>
+                                    <a class="btn text-white text-uppercase border-0 px-3 py-2"
+                                        style="background:linear-gradient(#FF589B,#FF136F);">Buy
+                                        Now
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col my-5 my-md-0 text-end">
+                                <img class="w-100" src="img/banner-images/xbox.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev w-auto" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ff9e99"
+                        class="bi bi-caret-left-fill mx-3" viewBox="0 0 16 16">
+                        <path
+                            d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                    </svg>
+                </button>
+                <button class="carousel-control-next w-auto" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ff9e99"
+                        class="bi bi-caret-right-fill mx-3" viewBox="0 0 16 16">
+                        <path
+                            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                    </svg>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active bg-secondary" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        class="bg-secondary" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        class="bg-secondary" aria-label="Slide 3"></button>
+                </div>
+            </div>
+        </section>
+        <section class="container pt-5 pb-3 my-5">
+            <h2>Categories</h2>
+            <div class="row g-5">
+                <div class="col">
+                    <div class="text-white d-flex align-items-center px-4 py-3" style="background:linear-gradient(140deg,#FF9C35,#FFD019);
+                        border-radius:10px;height:120px;">
+                        <h3 class="flex-grow-1">Watch</h3>
+                        <div class="h-100">
+                            <img class="h-100" src="img/categories/watch.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-white d-flex align-items-center px-4 py-3" style="background:linear-gradient(#FF589B,#FF136F);
+                    border-radius:10px;height:120px;">
+                        <h3 class="flex-grow-1">Bag</h3>
+                        <div class="h-100">
+                            <img class="h-100" src="img/categories/bag.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-white d-flex align-items-center px-4 py-3" style="background:linear-gradient(160deg,#4289FF,#3F07F8);
+                    border-radius:10px;height:120px;">
+                        <h3 class="flex-grow-1">Shoes</h3>
+                        <div class="h-100">
+                            <img class="h-100" src="img/categories/shoe.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="background:#f4f4f4;">
+            <div class="container py-5">
+                <h2 class="fw-bold mt-4 mb-4">Shoes</h2>
+                <div class="row g-4">
+                    <div class="col">
+                        <div class="card h-100 p-2" style="border-radius:10px;">
+                            <img src="img/shoes/shoe-1.png" class="card-img-top">
+                            <div
+                                class="card-body text-center d-flex flex-column justify-content-between align-items-center pb-4">
+                                <h4 class="card-title fw-bold mb-3" style="color:#1f1f1f;">Reebok Dart Men’s Shoes</h4>
+                                <p class="card-text mb-3" style="color:#4e4e4e;">
+                                    Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.
+                                </p>
+                                <h4 class="mb-3">$1289</h4>
+                                <a href="#"
+                                    class="btn btn-primary d-inline-flex bg-dark text-light text-uppercase px-3">Buy
+                                    Now
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 p-2" style="border-radius:10px;">
+                            <img src="img/shoes/shoe-2.png" class="card-img-top">
+                            <div
+                                class="card-body text-center d-flex flex-column justify-content-between align-items-center pb-4">
+                                <h4 class="card-title fw-bold mb-3" style="color:#1f1f1f;">Reebok Pump</h4>
+                                <p class="card-text mb-3" style="color:#4e4e4e;">
+                                    Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.
+                                </p>
+                                <h4 class="mb-3">$799</h4>
+                                <a href="#"
+                                    class="btn btn-primary d-inline-flex bg-dark text-light text-uppercase px-3">Buy
+                                    Now
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 p-2" style="border-radius:10px;">
+                            <img src="img/shoes/shoe-3.png" class="card-img-top">
+                            <div
+                                class="card-body text-center d-flex flex-column justify-content-between align-items-center pb-4">
+                                <h4 class="card-title fw-bold mb-3" style="color:#1f1f1f;">Reebok All Terrain</h4>
+                                <p class="card-text mb-3" style="color:#4e4e4e;">
+                                    Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.
+                                </p>
+                                <h4 class="mb-3">$849</h4>
+                                <a href="#"
+                                    class="btn btn-primary d-inline-flex bg-dark text-light text-uppercase px-3">Buy
+                                    Now
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5">
+                <h2 class="fw-bold mt-4 mb-4">Bagpack</h2>
+                <div class="row g-4">
+                    <div class="col">
+                        <div class="card h-100 p-2" style="border-radius:10px;">
+                            <img src="img/bags/bag-1.png" class="card-img-top">
+                            <div
+                                class="card-body text-center d-flex flex-column justify-content-between align-items-center pb-4">
+                                <h4 class="card-title fw-bold mb-3" style="color:#1f1f1f;">Ison Bagpack</h4>
+                                <p class="card-text mb-3" style="color:#4e4e4e;">
+                                    Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.
+                                </p>
+                                <h4 class="mb-3">$699</h4>
+                                <a href="#"
+                                    class="btn btn-primary d-inline-flex bg-dark text-light text-uppercase px-3">Buy
+                                    Now
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 p-2" style="border-radius:10px;">
+                            <img src="img/bags/bag-2.png" class="card-img-top">
+                            <div
+                                class="card-body text-center d-flex flex-column justify-content-between align-items-center pb-4">
+                                <h4 class="card-title fw-bold mb-3" style="color:#1f1f1f;">Biaowang Bagpack</h4>
+                                <p class="card-text mb-3" style="color:#4e4e4e;">
+                                    Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.
+                                </p>
+                                <h4 class="mb-3">$599</h4>
+                                <a href="#"
+                                    class="btn btn-primary d-inline-flex bg-dark text-light text-uppercase px-3">Buy
+                                    Now
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 p-2" style="border-radius:10px;">
+                            <img src="img/bags/bag-3.png" class="card-img-top">
+                            <div
+                                class="card-body text-center d-flex flex-column justify-content-between align-items-center pb-4">
+                                <h4 class="card-title fw-bold mb-3" style="color:#1f1f1f;">Dxyizu WS54 Smart</h4>
+                                <p class="card-text mb-3" style="color:#4e4e4e;">
+                                    Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.
+                                </p>
+                                <h4 class="mb-3">$999</h4>
+                                <a href="#"
+                                    class="btn btn-primary d-inline-flex bg-dark text-light text-uppercase px-3">Buy
+                                    Now
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container d-flex flex-column align-items-center justify-content-center"
+                style="background:#FFF2F1;height:455px;">
+                <h1 class="text-uppercase fw-bold">Let's stay in touch</h1>
+                <h5>Get updates on sales specials and more</h5>
+                <div class="d-flex w-md-50 mt-3">
+                    <div class="flex-grow-1">
+                        <input type="email" placeholder="Enter your email" class="w-100 border-0 px-3 py-2"
+                            style="outline:0;">
+                    </div>
+                    <div>
+                        <input type="submit" value="Send" class="btn text-light border-0 px-4 py-2"
+                            style="background:linear-gradient(#FF589B,#FF136F);">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
